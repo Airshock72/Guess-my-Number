@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Bungee Inline", monospace, sans-serif;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      to bottom,
+      hsla(204, 8%, 76%, 0.808),
+      hsla(210, 29%, 24%, 0.808)
+    ),
+    url("https://static.vecteezy.com/system/resources/previews/001/217/210/non_2x/binary-code-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/*HEADER*/
+.header-container {
+  /* background-color: tomato; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 40vh;
+  border-bottom: 10px solid rgb(0, 202, 238);
+}
+.btn {
+  font-size: 20px;
+  padding: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 200px;
+  border: 2px solid rgb(0, 109, 128);
+  color: rgb(0, 43, 51);
+  background-color: rgb(0, 202, 238);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.again {
+  align-self: flex-start;
+}
+.title {
+  /* background-color: yellow; */
+  font-size: 50px;
+  align-self: center;
+  margin-left: 100px;
+  color: rgb(0, 43, 51);
+}
+.between {
+  /* background-color: yellowgreen; */
+  align-self: flex-start;
+  font-size: 20px;
+  margin: 5px;
+  color: rgb(0, 43, 51);
+}
+/*MAIN*/
+.main-container {
+  /* background-color: maroon; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-content: flex-start; */
+  height: 60vh;
+}
+.left-container {
+  /* background-color: lawngreen; */
+  align-self: center;
+  margin-top: 5px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.guess {
+  background-color: rgb(0, 186, 219);
+  border-radius: 200px;
+  font-size: 1;
+}
+.number {
+  background-color: rgb(0, 186, 219);
+  align-self: flex-start;
+  font-size: 40px;
+  padding: 0 70px;
+  color: rgb(0, 43, 51);
+  border-radius: 200px;
+}
+.right-container {
+  /* background-color: magenta; */
+  align-self: center;
+  font-size: 18px;
+  text-align: center;
+  color: #002b33;
+}
+.message {
+  font-size: 25px;
+}
+
+@media (max-width: 950px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .title {
+    margin: 0 20px;
+  }
+  .between {
+    align-self: center;
+  }
+  .again {
+    order: 1;
+    align-self: center;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+  .number {
+    align-self: center;
+  }
+}
